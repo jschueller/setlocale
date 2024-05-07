@@ -16,4 +16,5 @@ jobs:
           make
           ./hello1
           sleep 1
+          echo "========================"
           ./hello2
