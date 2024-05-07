@@ -12,12 +12,12 @@ int main(int, const char* [])
 #else
   const char * test_locale = setlocale(LC_NUMERIC, "fr_FR.utf-8");
 #endif
-  std::cout << "test_locale="<<test_locale<<std::endl;
+  std::cout << "test_locale="<<test_locale<<std::endl<<std::flush;
   if (test_locale)
   {
     char szOrbits[] = "365,24 29,53";
     double v = strtod (szOrbits, NULL);
-    std::cout << "v="<<v<<std::endl;
+    std::cout << "v="<<v<<std::endl<<std::flush;
   }
   return 0;
 }
