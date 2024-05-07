@@ -9,7 +9,7 @@ int main(int, const char* [])
 {
   locale_t new_locale;
   new_locale = newlocale (LC_NUMERIC_MASK, "fr_FR.utf-8", NULL);
-  std::cout << "newlocale="<<newlocale<<std::endl;
+  std::cout << "new_locale="<<new_locale<<std::endl;
   
   locale_t old_locale = uselocale(new_locale);
   std::cout << "old_locale="<<old_locale<<std::endl;
